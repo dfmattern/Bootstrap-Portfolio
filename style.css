@@ -1,0 +1,53 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, rgba(127, 134, 136, 1) 0%, rgba(146, 157, 158, 1) 100%);
+    border-left: 40px solid #F6F6F8;
+    border-right: 40px solid #F6F6F8;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background: #F6F6F8;
+    left: 0;
+    right: 0;
+}
+
+body::before {
+    top: 0;
+    height: 40px;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Yesteryear', cursive;
+    text-align: center;
+}
+
+.headshot {
+    width: 100%
+}
+
+#bio {
+    margin: 1rem;
+}
+
+.nav-link {
+    color: #212529;
+}
+
+.navbar-dark .navbar-brand {
+    color: #212529;
+}
+
+a.nav-link:hover {
+    color: #F3E367;
+}
+
+div.card {
+    display: table;
+    margin: 0 auto;
+}
