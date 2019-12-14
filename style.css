@@ -4,11 +4,12 @@
 
 body {
     background: radial-gradient(circle, rgba(127, 134, 136, 1) 0%, rgba(146, 157, 158, 1) 100%);
-    border-left: 40px solid #F6F6F8;
-    border-right: 40px solid #F6F6F8;
+    /*border-left: 40px solid #F6F6F8;
+    border-right: 40px solid #F6F6F8;*/
 }
 
-body::before {
+
+/*body::before {
     content: "";
     position: fixed;
     background: #F6F6F8;
@@ -19,12 +20,47 @@ body::before {
 body::before {
     top: 0;
     height: 40px;
+}*/
+
+#top,
+#left,
+#right {
+    background: #f6f6f8;
+    position: fixed;
+}
+
+#left,
+#right {
+    top: 0;
+    bottom: 0;
+    width: 40px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#top {
+    left: 0;
+    right: 0;
+    height: 40px;
+}
+
+#top {
+    top: 0;
 }
 
 h1 {
     font-weight: bold;
-    font-family: 'Yesteryear', cursive;
     text-align: center;
+}
+
+.lead {
+    color: #F3E367;
 }
 
 .headshot {
@@ -33,6 +69,16 @@ h1 {
 
 #bio {
     margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.bio-link {
+    color: #F3E367;
+    text-decoration: none;
+}
+
+.bio-link:hover {
+    color: #212529;
 }
 
 .nav-link {
